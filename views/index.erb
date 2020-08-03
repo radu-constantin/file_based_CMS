@@ -1,0 +1,19 @@
+<doctype! HTML>
+<html>
+	<head>
+	</head>
+
+	<body>
+		<ul>
+			<%= session.delete(:error) %>
+			<%= session.delete(:message) %>
+			<% @files.each do |file| %>
+			<li><a href="/<%=file%>"> <%= file %> </a> <a href="/<%=file%>/edit">Edit</li>
+			<% end %>
+		</ul>
+
+		<a href="/new">New Document</a>
+	</body>
+
+
+</html>

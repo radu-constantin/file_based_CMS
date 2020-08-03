@@ -1,0 +1,16 @@
+<doctype! HTML>
+<html>
+	<head>
+	</head>
+
+	<body>
+		<div id="content">
+			<form name="text_edit" id="text_edit" action="/<%= params[:file_name] %>" method="post"> Edit content of <%= @filename %> <br>
+				<textarea form_id = "text_edit" name="text_edit" rows="20" cols="120"><%= @content %></textarea>
+				<button type="submit">Save changes</button>
+			</form>
+		</div>
+	</body>
+
+
+</html>
